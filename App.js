@@ -2,32 +2,59 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 export default function App() {
-  let data = [1,2,3,4,5]
-  //  let x = data.map((v,i)=>{
-  //   return v
-  //  })
-  //  console.log(x);
+ let  data = [
+    {
+      id: 101,
+      name: 'Abacavir',
+      quantity: 25,
+      price: 150,
+      expiry: 2022,
+      status: true
+    },
+    {
+      id: 102,
+      name: 'Eltrombopag',
+      quantity: 90,
+      price: 550,
+      expiry: 2021,
+      status: true
+    },
+    {
+      id: 103,
+      name: 'Meloxicam',
+      quantity: 85,
+      price: 450,
+      expiry: 2025,
+      status: false
+    },
+    {
+      id: 104,
+      name: 'Allopurinol',
+      quantity: 50,
+      price: 600,
+      expiry: 2023,
+      status: true
+    },
+    {
+      id: 105,
+      name: 'Phenytoin',
+      quantity: 63,
+      price: 250,
+      expiry: 2021,
+      status: false
+    }
+  ];
+   let  x = data.filter((v,i)=>{
+    for(let k in v){
+      if(v = 'expiry' ){
+        v.filter((a1)=> a1>2021)
+        console.log(a1);
+      }
+    }
+  })
+  console.log(x);
 
-  // let w = data.map((v,i)=>{
-  //   i = 1 ;
-  //   v = 20;
-    
-  // })
-  // console.log(w);
 
-
-
-//  let y = data.filter((v,i)=>{    // when we have more then one value   so we can use return
-                                   
-//     return v >= 3
-//   })
-//  console.log(y);
-
-  //  let z = data.filter((v,i)=> v>=4)  // when we have one value we can do without return 
-                                           
-  //  console.log(z);
-
-  
   return (
     <View>
       <Text>App</Text>
