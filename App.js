@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 export default function App() {
- let  data = [
+  let data = [
     {
       id: 101,
       name: 'Abacavir',
@@ -44,20 +44,26 @@ export default function App() {
       status: false
     }
   ];
-   let  x = data.filter((v,i)=>{
-    for(let k in v){
-      if(v = 'expiry' ){
-        v.filter((a1)=> a1>2021)
-        console.log(a1);
-      }
-    }
-  })
-  console.log(x);
+
+  let x = data.filter((d, i) => (d.expiry >= 2022))
+  // console.log(x);
+
 
 
   return (
     <View>
-      <Text>App</Text>
+      {
+        data.filter((d, i) => {
+          return (
+            <View key={i}>
+              <Text>{d.name}</Text>
+            </View>
+          )
+        })
+      }
+
+
+
     </View>
   )
 }
