@@ -8,12 +8,11 @@ export default function App() {
   //  })
   //  console.log(x);
 
-  // let w = data.map((v,i)=>{
-  //   i = 1 ;
-  //   v = 20;
+  let w = data.map((v,i)=>{
+     data.splice(1,1,20)
     
-  // })
-  // console.log(w);
+  })
+  console.log(w);
 
 
 
