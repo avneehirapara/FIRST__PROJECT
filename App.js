@@ -1,18 +1,21 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+// import { View, Text } from 'react-native'
+// import React from 'react'
 
-export default function App() {
-  let data = [1,2,3,4,5]
+// export default function App() {
+//   let data = [1,2,3,4,5]
   //  let x = data.map((v,i)=>{
   //   return v
   //  })
   //  console.log(x);
 
-  let w = data.map((v,i)=>{
-     data.splice(1,1,20)
-    
-  })
-  console.log(w);
+  // let x =  data.map((v,i)=>{
+  //     if(i === 1){
+  //       return 20
+  //     }else{
+  //       return v 
+  //     }
+  //   })
+  //   console.log(x);
 
 
 
@@ -27,9 +30,16 @@ export default function App() {
   //  console.log(z);
 
   
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  )
-}
+//   return (
+//     <View>
+//     {
+//       data.map((v,i)=>{
+         
+//       })
+//     }
+//      <Text>{x}</Text>
+     
+//     </View>
+//   )
+// }
+
