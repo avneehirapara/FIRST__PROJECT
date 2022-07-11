@@ -114,16 +114,21 @@ export default function App() {
 
   
   // let x = data.filter((d,i)=>(d.status === true));
-  // data.reduce((acc,d,i)=>(acc + d.salary + d.bonus, 0));
+  // let c = data.reduce((acc,d,i)=> acc + d.salary + d.bonus, 0);
   // console.log(x);
 
-  let z = data.filter((d,i)=> d.salary >35000)
-          .reduce((acc,d,i)=>(acc + d.bonus + d.salary,0));
+  let z = data.filter((d,i)=> d.salary >=35000)
+          .reduce((acc,d,i)=>acc + d.salary,0);
   console.log(z);
+
+  let x = data.filter((d,i)=>d.salary >=35000)
+              .reduce((acc,d,i) => acc + d.bonus ,0 )
+              console.log(x);
    
   return (
     <View>
-      <Text>{x}</Text>
+      <Text> salary = {z}</Text>
+      <Text> bonus = {x}</Text>
     </View>
   )
 }
