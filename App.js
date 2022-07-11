@@ -74,7 +74,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 
 export default function App() {
-   data : [
+   let data =  [
     {
       name: "amit",
       age: 35,
@@ -112,24 +112,18 @@ export default function App() {
     },
   ];
 
-  // let z = data.filter((d,i)=> (d.age >= 30))
-  // console.log(z);
-   
-  let z = data.filter((v,i)=>{
-    if(v.status === true){
-      return yes
-    }else{
-      return no
-    }
-  })
+  
+  // let x = data.filter((d,i)=>(d.status === true));
+  // data.reduce((acc,d,i)=>(acc + d.salary + d.bonus, 0));
+  // console.log(x);
+
+  let z = data.filter((d,i)=> d.salary >35000)
+          .reduce((acc,d,i)=>(acc + d.bonus + d.salary,0));
   console.log(z);
    
-
-
-
   return (
     <View>
-      <Text>App</Text>
+      <Text>{x}</Text>
     </View>
   )
 }
