@@ -45,8 +45,8 @@ export default function App() {
 
   //disturcting
 
-  let {first , second , therth , forth  , fifth } = q
-  console.log(second); 
+  let {id,name} = q
+  console.log(name); 
 
 
   return (
