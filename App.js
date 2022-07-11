@@ -70,6 +70,68 @@
 // }
 
 
+// import { View, Text } from 'react-native'
+// import React from 'react'
+
+// export default function App() {
+//    let data =  [
+//     {
+//       name: "amit",
+//       age: 35,
+//       salary: 40000,
+//       bonus: 1000,
+//       status: true
+//     },
+//     {
+//       name: "ajay",
+//       age: 25,
+//       salary: 38000,
+//       bonus: 2000,
+//       status: false
+//     },
+//     {
+//       name: "mayur",
+//       age: 23,
+//       salary: 50000,
+//       bonus: 500,
+//       status: true
+//     },
+//     {
+//       name: "jay",
+//       age: 29,
+//       salary: 35000,
+//       bonus: 600,
+//       status: true
+//     },
+//     {
+//       name: "raj",
+//       age: 33,
+//       salary: 22000,
+//       bonus: 2000,
+//       status: true
+//     },
+//   ];
+
+  
+ 
+
+//   let z = data.filter((d,i)=> d.salary >=35000)
+//           .reduce((acc,d,i)=>acc + d.salary,0);
+//   console.log(z);
+
+//   let x = data.filter((d,i)=>d.salary >=35000)
+//               .reduce((acc,d,i) => acc + d.bonus ,0 )
+//               console.log(x);
+   
+//   return (
+//     <View>
+//       <Text> salary = {z}</Text>
+//       <Text> bonus = {x}</Text>
+//     </View>
+//   )
+// }
+
+
 import { View, Text } from 'react-native'
 import React from 'react'
 
@@ -112,23 +174,13 @@ export default function App() {
     },
   ];
 
-  
-  // let x = data.filter((d,i)=>(d.status === true));
-  // let c = data.reduce((acc,d,i)=> acc + d.salary + d.bonus, 0);
-  // console.log(x);
+ let x = data.filter((d,i)=>(d.status === true));
+  let c = data.reduce((acc,d,i)=> acc + d.salary + d.bonus, 0);
+  console.log(x);
 
-  let z = data.filter((d,i)=> d.salary >=35000)
-          .reduce((acc,d,i)=>acc + d.salary,0);
-  console.log(z);
-
-  let x = data.filter((d,i)=>d.salary >=35000)
-              .reduce((acc,d,i) => acc + d.bonus ,0 )
-              console.log(x);
-   
   return (
     <View>
-      <Text> salary = {z}</Text>
-      <Text> bonus = {x}</Text>
+      <Text>total-cost = {c}</Text>
     </View>
   )
 }
