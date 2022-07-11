@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function App() {
 
-  // //for objects
+  // //for array
 
 
   // let arr = [1,2,3,4,5];
