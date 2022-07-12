@@ -1,73 +1,78 @@
-// import { View, Text } from 'react-native'
-// import React from 'react'
+import { View, Text } from 'react-native'
+import React from 'react'
 
-// export default function App() {
-//   let data = [
-//     {
-//       id: 101,
-//       name: 'Abacavir',
-//       quantity: 25,
-//       price: 150,
-//       expiry: 2022,
-//       status: true
-//     },
-//     {
-//       id: 102,
-//       name: 'Eltrombopag',
-//       quantity: 90,
-//       price: 550,
-//       expiry: 2021,
-//       status: true
-//     },
-//     {
-//       id: 103,
-//       name: 'Meloxicam',
-//       quantity: 85,
-//       price: 450,
-//       expiry: 2025,
-//       status: false
-//     },
-//     {
-//       id: 104,
-//       name: 'Allopurinol',
-//       quantity: 50,
-//       price: 600,
-//       expiry: 2023,
-//       status: true
-//     },
-//     {
-//       id: 105,
-//       name: 'Phenytoin',
-//       quantity: 63,
-//       price: 250,
-//       expiry: 2021,
-//       status: false
-//     }
-//   ];
+export default function App() {
+  let data = [
+    a = {
+      id: 101,
+      name: 'Abacavir',
+      quantity: 25,
+      price: 150,
+      expiry: 2022,
+      status: true
+    },
+    {
+      id: 102,
+      name: 'Eltrombopag',
+      quantity: 90,
+      price: 550,
+      expiry: 2021,
+      status: true
+    },
+    {
+      id: 103,
+      name: 'Meloxicam',
+      quantity: 85,
+      price: 450,
+      expiry: 2025,
+      status: false
+    },
+    {
+      id: 104,
+      name: 'Allopurinol',
+      quantity: 50,
+      price: 600,
+      expiry: 2023,
+      status: true
+    },
+    {
+      id: 105,
+      name: 'Phenytoin',
+      quantity: 63,
+      price: 250,
+      expiry: 2021,
+      status: false
+    }
+  ];
    
-//   let x = data.filter((d,i)=>(d.expiry>=2022))
-//                .reduce((acc,d,i)=> acc + d.price ,0)
-//   console.log(x);
+  let x = data.a.filter((d,i)=>(d.expiry>=2022))
+               .reduce((acc,d,i)=> acc + d.price ,0)
+               console.log(x);
+               
+               let{id ,name,quantity ,price,expiry,status} = a;
+
+  
 
    
 
-//   return (
-//     <View>
-//       {
-//         data.map((d,i)=>{
-//           return(
-//             <View key={i}>
-//               <Text>{d.name}</Text>
-//               <Text>{d.expiry}</Text>
-//               <Text>{d.price}</Text>
-//             </View>
-//           )
-//         })
-//       }
-//       <Text>total price = {x}</Text>
-//     </View>
-//   )
-// }
+  return (
+    <View>
+      {
+        data.map((d,i)=>{
+          return(
+            <View key={i}>
+              <Text> name =   {d.name}</Text>
+              <Text> expiry = {d.expiry}</Text>
+              <Text> price =  {d.price}</Text>
+              <Text> id =     {id}</Text>
+            </View>
+          )
+        })
+      }
+      <Text>total price = {x}</Text>
+    </View>
+  )
+}
 
 
 // import { View, Text } from 'react-native'
@@ -184,4 +189,5 @@
 //     </View>
 //   )
 // }
+
 
