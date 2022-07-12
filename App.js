@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function App() {
   let data = [
-    a = {
+    {
       id: 101,
       name: 'Abacavir',
       quantity: 25,
@@ -45,11 +45,10 @@ export default function App() {
     }
   ];
    
-  let x = data.a.filter((d,i)=>(d.expiry>=2022))
+  let x = data.filter((d,i)=>(d.expiry>=2022))
                .reduce((acc,d,i)=> acc + d.price ,0)
                console.log(x);
                
-               let{id ,name,quantity ,price,expiry,status} = a;
 
   
 
@@ -59,11 +58,13 @@ export default function App() {
     <View>
       {
         data.map((d,i)=>{
+          let{id ,name,quantity ,price,expiry,status} = d;
+
           return(
             <View key={i}>
-              <Text> name =   {d.name}</Text>
-              <Text> expiry = {d.expiry}</Text>
-              <Text> price =  {d.price}</Text>
+              <Text> name =   {name}</Text>
+              <Text> expiry = {expiry}</Text>
+              <Text> price =  {price}</Text>
               <Text> id =     {id}</Text>
             </View>
           )
